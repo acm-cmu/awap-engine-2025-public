@@ -177,7 +177,7 @@ class UnitType (Enum):
 
 
 
-    GALLEY = (10, 1, 1, 1, 1, 1, 1, 1, 0, 0, [BuildingType.PORT], [Tile.WATER, Tile.BRIDGE])
+    GALLEY = (15, 3, 1, 1, 1, 2, 1, 1, 0, 0, [BuildingType.PORT], [Tile.WATER, Tile.BRIDGE])
 
     EXPLORER = (1, 10, 0, 1, 0, 0, 1, 2, 0, 0, [BuildingType.MAIN_CASTLE], [Tile.GRASS, Tile.SAND, Tile.BRIDGE, Tile.MOUNTAIN, Tile.WATER])
 
@@ -226,7 +226,7 @@ class TileColors:
         Tile.ERROR : (0, 0, 0), #white
         Tile.MOUNTAIN : (128, 128, 128), #gray
         Tile.GRASS : (0, 128, 0), #green
-        Tile.SAND : (3, 2), #yellow
+        Tile.SAND : (186, 142, 35), #yellow
         Tile.WATER : (173, 216, 230), #light blue
         Tile.BRIDGE : (222, 184, 135), #brown
     }
