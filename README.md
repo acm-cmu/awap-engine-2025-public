@@ -4,9 +4,13 @@ Welcome to AWAP 2025!
 
 ## Installation
 
-`pip install -r requirements.txt`
+We use python version >= 3.9
+<br>
+<br>
 
-This installs pygame for visualization purposes
+This installs pygame for visualization purposes:
+
+`pip install -r requirements.txt`
 
 ## Quick Start
 
@@ -36,3 +40,18 @@ Equivalently, running the above command without the render flag does not render 
 
 
 To create a bot, add a new file to `/bots`.
+
+
+
+#### To pull updates, run:
+
+`git remote add upstream https://github.com/acm-cmu/awap-engine-2025-public.git`
+
+Run the above command to add the original updated repository if you have not done this already.
+
+`git fetch upstream main`
+
+`git rebase upstream/main`
+
+Run the above commands to install current patches and bug fixes locally.
+
