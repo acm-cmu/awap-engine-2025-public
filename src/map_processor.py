@@ -12,14 +12,14 @@ def process_map(file_name: str) -> Optional[Map]:
 
     arr = ast.literal_eval(arrAsStr)
 
-    height = len(arr)
-    width = len(arr[0])
+    width = len(arr)
+    height = len(arr[0])
 
     blue_castle_loc = (-1, -1)
     red_castle_loc = (-1, -1)
 
-    for i in range(height): 
-        for j in range(width):
+    for i in range(width): 
+        for j in range(height):
             if arr[i][j] == 'BLUE CASTLE':
                 blue_castle_loc = (i, j)
                 arr[i][j] = 'GRASS'
