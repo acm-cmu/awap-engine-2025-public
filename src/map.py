@@ -86,8 +86,8 @@ class Map:
         Converts the map into a dictionary representation, for json replay file
         """
         return {
-            "width": self.width,
-            "height": self.height,
+            "width": self.height,
+            "height": self.width,
             "tiles": [[tile.name if hasattr(tile, 'name') else str(tile) for tile in row] for row in self.tiles],
             # "blue_castle_loc": self.blue_castle_loc,
             # "red_castle_loc": self.red_castle_loc
